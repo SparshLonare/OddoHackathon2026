@@ -27,7 +27,7 @@ DriveOps is designed for fleet operations teams that need to:
 - Node.js
 - Express 5
 - MongoDB with Mongoose
-- RWAC authentication
+- RBAC authentication
 
 
 ## Core Features
