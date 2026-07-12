@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
+const vehicleRoutes = require('./routes/vehicleRoutes');
 
 dotenv.config();
 connectDB();
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
+app.use('/api/vehicles', vehicleRoutes);
 
 app.get('/', (req, res) => {
   res.send('DriveOps API is running');
